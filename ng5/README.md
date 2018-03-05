@@ -27,33 +27,33 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
 
-### GIT COMMANDS FOR REFERENCE:
+# GIT COMMANDS FOR REFERENCE:
 
 ## Setup and common
-git clone https://url
+git clone https://url  
 git status
 
 ## Delete local changes
-# src: https://stackoverflow.com/questions/22620393/various-ways-to-remove-local-git-changes
-# Type 1. Staged Tracked files
-# Type 2. Unstaged Tracked files
-# Type 3. Unstaged UnTracked files a.k.a UnTracked files
+src: https://stackoverflow.com/questions/22620393/various-ways-to-remove-local-git-changes  
+Type 1. Staged Tracked files  
+Type 2. Unstaged Tracked files  
+Type 3. Unstaged UnTracked files a.k.a UnTracked files  
 
-git checkout . (Removes Unstaged Tracked files ONLY [Type 2])
-git clean -f (Removes Unstaged UnTracked files ONLY [Type 3])
-git reset --hard (Removes Staged Tracked and UnStaged Tracked files ONLY[Type 1, Type 2])
+git checkout . (Removes Unstaged Tracked files ONLY [Type 2])  
+git clean -f (Removes Unstaged UnTracked files ONLY [Type 3])  
+git reset --hard (Removes Staged Tracked and UnStaged Tracked files ONLY[Type 1, Type 2])  
 git stash -u (Removes all changes [Type 1, Type 2, Type 3])
 
 ## Feature branch creation and merge to master
-git checkout -b $FeatureBranch1
-git add .
-git commit -m "Commit message"
-git push origin $FeatureBranch1
-git checkout master
-git merge $FeatureBranch1
-git add .
-git push origin master
+git checkout -b $FeatureBranch1  
+git add .  
+git commit -m "Commit message"  
+git push origin $FeatureBranch1  
+git checkout master  
+git merge $FeatureBranch1  
+git add .  
+git push origin master  
 
 ## Delete branch - local
-git checkout master (should be on master to delete branch)
-git branch -d $FeatureBranch1
+git checkout master (should be on master to delete branch)  
+git branch -d $FeatureBranch1  
